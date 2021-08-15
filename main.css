@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.wrapper,
+.blockAdd {
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+.block1,
+.block2,
+.blockAdd {
+    padding: 5px 0 0 35px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.804);
+    background-color: rgb(237, 238, 240);
+}
+
+.block1 {
+    height: 295px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.block2 {
+    height: 310px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.block1,
+.block2 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgb(205, 201, 201);
+}
+
+.block2 textarea {
+    margin: 15px 0 15px 0;
+    width: 900px;
+    height: 195px;
+    padding: 10px 0 0 25px;
+    overflow: auto;
+    font: 16px sans-serif;
+    color: rgb(138, 138, 138);
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 201, 201);
+}
+
+.block2 textarea:focus {
+    border: none;
+    outline: 2px rgba(76, 118, 182, 0.838);
+    box-shadow: 0 0 0 4px rgba(140, 201, 255, 0.838);
+}
+
+.blockBtn1 {
+    margin: 10px 0 -10px 10px;
+    background-color: white;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+input[type=button] {
+    border: none;
+    width: 50px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.edit {
+    background-color: rgb(255, 204, 0);
+    margin-right: 5px;
+}
+
+.edit:hover {
+    background-color: rgba(225, 174, 5, 0.824);
+}
+
+.edit:focus {
+    outline: 2px rgba(244, 209, 11, 0.694);
+    box-shadow: 0 0 0 3px rgba(247, 214, 26, 0.708);
+}
+
+.style {
+    background-color: rgb(20, 162, 187);
+    color: white;
+}
+
+.style:hover {
+    background-color: rgba(0, 130, 154, 0.803);
+}
+
+.style:focus {
+    outline: 2px rgba(76, 166, 182, 0.838);
+    box-shadow: 0 0 0 3px rgba(118, 203, 218, 0.838);
+}
+
+.add {
+    background-color: rgb(228, 34, 34);
+    color: white;
+}
+
+.add:hover {
+    background-color: rgba(191, 34, 34, 0.92);
+}
+
+.add:focus {
+    outline: 1px rgba(232, 6, 6, 0.934);
+    box-shadow: 0 0 0 3px rgba(242, 47, 47, 0.714);
+}
+
+.save {
+    background-color: rgb(28, 176, 28);
+    color: white;
+}
+
+.save:hover {
+    background-color: rgba(21, 108, 21, 0.797);
+}
+
+.save:focus {
+    outline: 1px rgba(72, 211, 72, 0.817);
+    box-shadow: 0 0 0 3px rgba(64, 215, 69, 0.578);
+}
+
+.f2 input[type=button] {
+    border: none;
+    width: auto;
+    height: auto;
+    background-color: rgb(90, 100, 109);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-right: 2px;
+}
+
+.f2 input[type=button]:hover {
+    background-color: rgb(63, 68, 72);
+}
+
+.f2 input[type=button]:focus {
+    outline: 1px rgb(132, 145, 155);
+    box-shadow: 0 0 0 3px rgb(183, 187, 191);
+}
+
+.f2 p {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.fontRadio {
+    margin-left: 10px;
+}
+
+.f2 input[type=radio]:nth-child(1) {
+    margin-left: 0;
+}
+
+input[type=radio] {
+    width: 17px;
+    height: 17px;
+}
+
+.f2 input[type=checkbox] {
+    border-radius: 5px;
+}
+
+.f2 span {
+    margin: 0 10px 0 5px;
+}
+
+.f3 span {
+    margin: 0 10px 0 5px;
+}
+
+.f2 select {
+    width: 360px;
+    height: 40px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: unset;
+    border: 1px solid rgb(205, 201, 201);
+}
+
+.f2 select:focus {
+    outline: 2px rgba(76, 118, 182, 0.838);
+    box-shadow: 0 0 0 4px rgba(140, 201, 255, 0.838);
+}
+
+.box1,
+.box2 {
+    height: 195px;
+    width: 195px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 64px;
+    left: 670px;
+}
+
+.block {
+    width: 65px;
+    height: 65px;
+}
+
+.red {
+    background-color: rgb(228, 13, 13);
+}
+
+.blue {
+    background-color: rgb(19, 104, 249);
+}
+
+.green {
+    background-color: rgb(6, 157, 6);
+}
+
+.black {
+    background-color: black;
+}
+
+.gold {
+    background-color: rgb(235, 188, 0)
+}
+
+.pink {
+    background-color: rgb(230, 30, 110);
+}
+
+.white {
+    background-color: white;
+}
+
+.violet {
+    background-color: rgb(126, 17, 228);
+}
+
+.cyan {
+    background-color: #2a8bb2;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin-left: 5px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.blockAdd {
+    height: 220px;
+    padding: 25px 0 25px 25px;
+    width: 828px;
+    margin: 20px auto;
+}
+
+.blockAdd h2 {
+    margin-bottom: 5px;
+}
+
+.blockAdd input[type=text] {
+    width: 630px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: unset;
+    border: none;
+    padding: 4px 0px 0px 8px;
+}
+
+.blockAdd input[type=text]:focus {
+    box-shadow: 0 0 0 4px rgba(140, 201, 255, 0.838);
+}
+
+.blockAdd span {
+    font-size: 15px;
+    color: rgb(93, 91, 91);
+}
+
+.countTR {
+    margin-left: 83px;
+}
+
+.countTD {
+    margin-left: 83px;
+}
+
+.widthTD {
+    margin-left: 66px;
+}
+
+.heighTD {
+    margin-left: 63px;
+}
+
+.widthBorder {
+    margin-left: 41px;
+    margin-right: 25px;
+}
+
+.a {
+    margin-left: 5px;
+}
+
+.styleBorder input[type=text] {
+    width: 94px;
+    height: 25px;
+    padding: 4px 0px 0px 8px;
+}
+
+.blockAdd select {
+    width: 110px;
+    height: 33px;
+    padding: 4px 0px 0px 8px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 3px;
+    border: none;
+    outline: unset;
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+.blockAdd select:focus {
+    box-shadow: 0 0 0 4px rgba(140, 201, 255, 0.838);
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.blockAdd input[type=button] {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(28, 176, 28);
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.blockAdd input[type=button]:hover {
+    background-color: rgb(25, 137, 25);
+}
+
+.blockAdd input[type=button]:focus {
+    outline: 1px rgba(72, 211, 72, 0.817);
+    box-shadow: 0 0 0 3px rgba(64, 215, 69, 0.578);
+}
+
+.blockList input[type=text] {
+    margin-left: 58px;
+    width: 668px;
+}
+
+.blockList select {
+    width: 675px;
+    height: 33px;
+}
+
+.blockList input[type=button] {
+    margin: 25px 0 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 3px
+}
+
+.radios,
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    left: 3px;
+    margin-right: 7px;
+    z-index: 0;
+    outline: none;
+    opacity: 0;
+}
+
+input[type=radio]+label {
+    position: relative;
+    display: inline-block;
+    margin-left: -3px;
+}
+
+input[type=radio]:checked+label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: -20px;
+    top: 3px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: #2196f3;
+}
+
+input[type=radio]+label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: -20px;
+    top: 3px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: #9e9e9e2e;
+    border: none;
+    outline: none;
+}
+
+input[type=radio]:checked+label::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    border-radius: 50%;
+    left: -15px;
+    top: 8px;
+    z-index: 1;
+}
+
+input[type=radio]:focus+label::before {
+    left: -15.5px;
+    top: 10px;
+}
+
+input[type=radio]:focus+label::after {
+    left: -22px;
+    animation: focus-pulse 300ms forwards;
+}
+
+@keyframes focus-pulse {
+    0% {
+        transform: scale(0.8);
+        border: 0px solid rgb(250, 250, 252);
+        box-shadow: 0 0 0 0px rgb(0, 145, 255);
+    }
+
+    70% {
+        transform: scale(1);
+        border: 1.3px solid rgb(250, 250, 252);
+        box-shadow: 0 0 2px rgb(0, 145, 255);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0px 3px rgb(0, 145, 255);
+        border: 1.5px solid rgb(250, 250, 252);
+    }
+}
+
+.f2 input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    left: 3px;
+    margin-right: 7px;
+    margin-left: 0px;
+    z-index: 0;
+    outline: none;
+    opacity: 0;
+}
+
+.f2 input[type=checkbox]+label {
+    position: relative;
+    display: inline-block;
+}
+
+.f2 input[type=checkbox]:checked+label::before {
+    content: '\2713';
+    font-size: 9px;
+    font-weight: bold;
+    padding: 3px 1px 1px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    position: absolute;
+    display: block;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    background: rgb(0, 136, 255);
+    left: -19px;
+    top: 2px;
+    margin-left: -6px;
+    z-index: 1;
+}
+
+input[type=checkbox]+label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: -20px;
+    top: 3px;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background: #9e9e9e2e;
+    border: none;
+    outline: none;
+    margin-left: -6px;
+}
+
+input[type=checkbox]:focus+label::after {
+    margin-top: -2px;
+    animation: focus-pulse 300ms forwards;
+}
+
+.f2 label {
+    padding: 0 17px 0 0;
+}
+
+.f3 label {
+    padding: 0 17px 0 0;
+}
+
+.radios label {
+    padding-left: 5px;
+}

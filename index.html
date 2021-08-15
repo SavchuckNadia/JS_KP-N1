@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="block1">
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+           </div>
+       </div>
+      <div class="blockBtn1">
+          <input  class="edit" type="button" value="edit">
+          <input class="style" type="button" value="style">
+      </div>
+       <div class="block2">
+           <form style="display: none;" class="f1"  name="f1">
+                <textarea name="blockInnerHTML" id="" cols="30" rows="10"></textarea>
+                <div class="blockBtn2">
+                    <input class="add" type="button" value="add">
+                    <input class="save" type="button" value="save">
+                </div>
+           </form>
+           <form style="display: none;" class="f2" name="f2">
+               <p>Font Size:</p>
+               <div class="radios">   
+                    <div class="radio-wrapper">
+                        <input  type="radio" value="12px" name="radio" id="12px">
+                        <label for="12px">12px</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input  type="radio" value="14px" name="radio" id="14px">
+                        <label for="14px">14px</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input checked type="radio" value="16px"  name="radio" id="16px">
+                        <label for="16px">16px</label>
+                    </div> 
+                    <div class="radio-wrapper">
+                        <input type="radio" value="18px"  name="radio" id="18px">
+                        <label for="18px">18px</label>
+                    </div>
+                    <div class="radio-wrapper"> 
+                        <input type="radio" value="20px"  name="radio" id="20px">
+                        <label for="20px">20px</label> 
+                    </div>
+               </div>
+               <p>Font Family:</p>
+               <select name="chooseFont" id="">
+                   <option value="Choose option">Choose option</option> 
+                   <option value="cursive">cursive</option>
+                   <option value="fantasy">fantasy</option>
+                   <option value="monospace">monospace</option>
+                   <option value="sans-serif">sans-serif</option>
+               </select>
+               <p>Colors:</p>
+               <input class="btn-color" type="button" name="colorText" value="Color of Text">
+               <input class="btn-color" type="button" name="backgroundColor" value="Background color">
+               <p>Style:</p>
+               <div class="checkboxes">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkBold" id="boldText">
+                        <label for="boldText">Bold text</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkCursive" id="cursiveText">
+                        <label for="cursiveText">Cursive text</label>
+                    </div>
+               </div>
+           </form>
+           <div  style="display: none;"class="colors1">
+                <div class="box1 color ">
+                    <div class="block red"></div>
+                    <div class="block blue"></div>
+                    <div class="block green"></div>
+                    <div class="block black"></div>
+                    <div class="block gold"></div>
+                    <div class="block pink"></div>
+                    <div class="block white"></div>
+                    <div class="block violet"></div>
+                    <div class="block cyan"></div>
+                </div>
+            </div> 
+            <div  style="display: none;"class="colors2">
+                <div class="box2 background ">
+                    <div class="block red"></div>
+                    <div class="block blue"></div>
+                    <div class="block green"></div>
+                    <div class="block black"></div>
+                    <div class="block gold"></div>
+                    <div class="block pink"></div>
+                    <div class="block white"></div>
+                    <div class="block violet"></div>
+                    <div class="block cyan"></div>
+                </div>
+           </div> 
+       </div>
+    </div>
+    <div  style="display: none;" class="wrapper2">
+        <div class="blockAdd">
+            <h2>Choose what you want:</h2>
+            <form class="f3" name="f3">
+                <div class="radios"> 
+                    <div class="radio-wrapper">
+                        <input type="radio" name="chooseAdd" value="table" id="table">
+                        <label for="table">table</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="chooseAdd" value="list" id="list">
+                        <label for="list">list</label>
+                    </div>
+                </div>
+            </form>
+            <div style="display: none;" class="blockTable">
+                <form class="fTable" name="fTable">
+                    <span class="a">Count TR:</span><input class="countTR" type="text" name="countTR" id="" placeholder="Count TR:">
+                    <span class="a">Count TD:</span><input class="countTD" type="text" name="countTD" id="" placeholder="Count TD:">
+                    <h4>Add style to your table:</h4>
+                    <span class="a">Width of TD:</span><input class="widthTD" type="text" name="widthTD" id="" placeholder="Width of TD:">
+                    <span class="a">Height of TD:</span><input class="heighTD" type="text" name="heighTD" id="" placeholder="Height of TD:">
+                    <div class="styleBorder">
+                        <span class="a">Width of border:</span><input class="widthBorder" type="text" name="widthBorder" id="" placeholder="Width:">
+                        <span>Type of border:</span> <select name="typeBorder" id="">
+                            <option selected value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="ridge">ridge</option>
+                            <option value="inset">inset</option>
+                            <option value="outset">outset</option>
+                            <option value="none">none</option>
+                            <option value="hidden">hidden</option>
+                        </select>
+                        <span>Color of border: </span> <select name="colorBorder" id="">
+                            <option selected value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select>
+                    </div>
+                    <input type="button" name="btnCreateTable" class="createTable" value="Create table">
+                </form>
+            </div>
+            <div style="display: none;" class="blockList">
+                <form name="fList">
+                    <span class="a">Count Li:</span><input type="text" name="countLi" id="" placeholder="Count Li:">
+                    <span>Type of marks:</span> <select name="typeMarks" id="">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                    <input  type="button"  name="btnCreateList" value="Create list" >
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <script src="./main.js"></script>
+</body>
+</html>
